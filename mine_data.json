@@ -4,17 +4,35 @@
         "latitude": 21.3985,
         "longitude": 79.2892,
         "expected_production": 135000,
-        "predicted_production": 89037,
-        "shortfall": 45963,
-        "risk": "MEDIUM",
-        "equipment_availability": 81.7,
-        "downtime_hours": 37.9,
-        "blast_delay_days": 7,
+        "predicted_production": 79587,
+        "adjusted_production": 73220,
+        "shortfall": 61780,
+        "risk": "HIGH",
+        "weather": "Rain",
+        "temperature": 24.7,
+        "humidity": 91.5,
+        "rainfall_mm": 75.0,
+        "soil_moisture": 72.3,
+        "weather_impact": 8,
+        "corrosion_risk": "HIGH",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "High humidity and soil moisture increase corrosion risk, potentially causing equipment degradation and downtime.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 81.6,
+        "downtime_hours": 58.4,
+        "blast_delay_days": 10,
         "issues": [
-            "Moderate Blasting Delays"
+            "Elevated Equipment Downtime",
+            "Severe Blasting Delays",
+            "Moderate Rainfall Impacting Efficiency"
         ],
         "recommendations": [
-            "Review blasting schedule"
+            "Improve maintenance scheduling",
+            "Optimize blasting operations",
+            "Adjust shift schedules and monitor haul roads"
         ]
     },
     {
@@ -22,19 +40,32 @@
         "latitude": 21.412,
         "longitude": 79.2715,
         "expected_production": 192000,
-        "predicted_production": 112392,
-        "shortfall": 79608,
+        "predicted_production": 103661,
+        "adjusted_production": 99515,
+        "shortfall": 92485,
         "risk": "HIGH",
-        "equipment_availability": 76.2,
-        "downtime_hours": 69.4,
-        "blast_delay_days": 5,
+        "weather": "Rain",
+        "temperature": 30.8,
+        "humidity": 74.7,
+        "rainfall_mm": 31.8,
+        "soil_moisture": 36.1,
+        "weather_impact": 4,
+        "corrosion_risk": "LOW",
+        "weather_analysis": [
+            "Estimated production reduced by approximately 4% due to current environmental conditions."
+        ],
+        "equipment_availability": 72.8,
+        "downtime_hours": 42.8,
+        "blast_delay_days": 10,
         "issues": [
             "Low Equipment Availability",
-            "Excessive Equipment Downtime"
+            "Elevated Equipment Downtime",
+            "Severe Blasting Delays"
         ],
         "recommendations": [
             "Improve equipment utilization",
-            "Reduce equipment downtime"
+            "Improve maintenance scheduling",
+            "Optimize blasting operations"
         ]
     },
     {
@@ -42,12 +73,49 @@
         "latitude": 21.9621,
         "longitude": 80.4682,
         "expected_production": 150000,
-        "predicted_production": 90497,
-        "shortfall": 59503,
+        "predicted_production": 104611,
+        "adjusted_production": 100427,
+        "shortfall": 49573,
+        "risk": "MEDIUM",
+        "weather": "Rain",
+        "temperature": 37.7,
+        "humidity": 66.9,
+        "rainfall_mm": 39.3,
+        "soil_moisture": 45.4,
+        "weather_impact": 4,
+        "corrosion_risk": "LOW",
+        "weather_analysis": [
+            "Estimated production reduced by approximately 4% due to current environmental conditions."
+        ],
+        "equipment_availability": 80.7,
+        "downtime_hours": 21.4,
+        "blast_delay_days": 4,
+        "issues": [],
+        "recommendations": []
+    },
+    {
+        "mine_name": "Tirodi",
+        "latitude": 21.6815,
+        "longitude": 79.7211,
+        "expected_production": 210000,
+        "predicted_production": 118353,
+        "adjusted_production": 113619,
+        "shortfall": 96381,
         "risk": "HIGH",
-        "equipment_availability": 67.5,
-        "downtime_hours": 32.4,
-        "blast_delay_days": 3,
+        "weather": "Rain",
+        "temperature": 28.8,
+        "humidity": 85.6,
+        "rainfall_mm": 40.0,
+        "soil_moisture": 47.6,
+        "weather_impact": 4,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 4% due to current environmental conditions."
+        ],
+        "equipment_availability": 69.1,
+        "downtime_hours": 36.7,
+        "blast_delay_days": 5,
         "issues": [
             "Critical Equipment Availability"
         ],
@@ -56,15 +124,294 @@
         ]
     },
     {
-        "mine_name": "Tirodi",
-        "latitude": 21.6815,
-        "longitude": 79.7211,
-        "expected_production": 210000,
-        "predicted_production": 140150,
-        "shortfall": 69850,
-        "risk": "HIGH",
-        "equipment_availability": 77.3,
+        "mine_name": "Gumgaon",
+        "latitude": 21.3852,
+        "longitude": 79.0312,
+        "expected_production": 87000,
+        "predicted_production": 49007,
+        "adjusted_production": 41656,
+        "shortfall": 45344,
+        "risk": "MEDIUM",
+        "weather": "Heavy Rain",
+        "temperature": 41.4,
+        "humidity": 82.8,
+        "rainfall_mm": 109.6,
+        "soil_moisture": 99.0,
+        "weather_impact": 15,
+        "corrosion_risk": "HIGH",
+        "weather_analysis": [
+            "Heavy rainfall is reducing operational hours, slowing transportation and affecting haul-road efficiency.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "High humidity and soil moisture increase corrosion risk, potentially causing equipment degradation and downtime.",
+            "Estimated production reduced by approximately 15% due to current environmental conditions."
+        ],
+        "equipment_availability": 65.2,
+        "downtime_hours": 20.6,
+        "blast_delay_days": 5,
+        "issues": [
+            "Critical Equipment Availability",
+            "Heavy Rainfall Affecting Operations"
+        ],
+        "recommendations": [
+            "Increase preventive maintenance",
+            "Increase drainage and reduce vehicle movement"
+        ]
+    },
+    {
+        "mine_name": "Ramtek (Parseoni)",
+        "latitude": 21.3961,
+        "longitude": 79.3284,
+        "expected_production": 54000,
+        "predicted_production": 35369,
+        "adjusted_production": 32539,
+        "shortfall": 21461,
+        "risk": "MEDIUM",
+        "weather": "Rain",
+        "temperature": 36.2,
+        "humidity": 69.0,
+        "rainfall_mm": 74.1,
+        "soil_moisture": 73.1,
+        "weather_impact": 8,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 78.8,
+        "downtime_hours": 12.7,
+        "blast_delay_days": 7,
+        "issues": [
+            "Low Equipment Availability",
+            "Moderate Blasting Delays",
+            "Moderate Rainfall Impacting Efficiency"
+        ],
+        "recommendations": [
+            "Improve equipment utilization",
+            "Review blasting schedule",
+            "Adjust shift schedules and monitor haul roads"
+        ]
+    },
+    {
+        "mine_name": "Sitasaongi",
+        "latitude": 21.5288,
+        "longitude": 79.761,
+        "expected_production": 72000,
+        "predicted_production": 50224,
+        "adjusted_production": 46206,
+        "shortfall": 25794,
+        "risk": "MEDIUM",
+        "weather": "Rain",
+        "temperature": 32.7,
+        "humidity": 87.1,
+        "rainfall_mm": 44.1,
+        "soil_moisture": 45.9,
+        "weather_impact": 8,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 87.2,
+        "downtime_hours": 53.7,
+        "blast_delay_days": 7,
+        "issues": [
+            "Elevated Equipment Downtime",
+            "Moderate Blasting Delays",
+            "Moderate Rainfall Impacting Efficiency"
+        ],
+        "recommendations": [
+            "Improve maintenance scheduling",
+            "Review blasting schedule",
+            "Adjust shift schedules and monitor haul roads"
+        ]
+    },
+    {
+        "mine_name": "Parsoda",
+        "latitude": 21.3125,
+        "longitude": 79.158,
+        "expected_production": 39000,
+        "predicted_production": 28830,
+        "adjusted_production": 26523,
+        "shortfall": 12477,
+        "risk": "LOW",
+        "weather": "Rain",
+        "temperature": 29.0,
+        "humidity": 48.8,
+        "rainfall_mm": 45.9,
+        "soil_moisture": 55.1,
+        "weather_impact": 8,
+        "corrosion_risk": "LOW",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "Elevated soil moisture may affect equipment movement and excavation speed.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 82.7,
         "downtime_hours": 33.6,
+        "blast_delay_days": 2,
+        "issues": [
+            "Moderate Rainfall Impacting Efficiency"
+        ],
+        "recommendations": [
+            "Adjust shift schedules and monitor haul roads"
+        ]
+    },
+    {
+        "mine_name": "Miragpur",
+        "latitude": 21.6341,
+        "longitude": 79.6124,
+        "expected_production": 27000,
+        "predicted_production": 18662,
+        "adjusted_production": 17169,
+        "shortfall": 9831,
+        "risk": "LOW",
+        "weather": "Rain",
+        "temperature": 39.7,
+        "humidity": 93.2,
+        "rainfall_mm": 75.1,
+        "soil_moisture": 71.1,
+        "weather_impact": 8,
+        "corrosion_risk": "HIGH",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "High humidity and soil moisture increase corrosion risk, potentially causing equipment degradation and downtime.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 78.1,
+        "downtime_hours": 21.5,
+        "blast_delay_days": 4,
+        "issues": [
+            "Low Equipment Availability",
+            "Moderate Rainfall Impacting Efficiency"
+        ],
+        "recommendations": [
+            "Improve equipment utilization",
+            "Adjust shift schedules and monitor haul roads"
+        ]
+    },
+    {
+        "mine_name": "Netra",
+        "latitude": 21.8512,
+        "longitude": 80.2415,
+        "expected_production": 48000,
+        "predicted_production": 41211,
+        "adjusted_production": 35029,
+        "shortfall": 12971,
+        "risk": "LOW",
+        "weather": "Heavy Rain",
+        "temperature": 38.3,
+        "humidity": 57.5,
+        "rainfall_mm": 105.3,
+        "soil_moisture": 94.6,
+        "weather_impact": 15,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Heavy rainfall is reducing operational hours, slowing transportation and affecting haul-road efficiency.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 15% due to current environmental conditions."
+        ],
+        "equipment_availability": 93.5,
+        "downtime_hours": 22.5,
+        "blast_delay_days": 3,
+        "issues": [
+            "Heavy Rainfall Affecting Operations"
+        ],
+        "recommendations": [
+            "Increase drainage and reduce vehicle movement"
+        ]
+    },
+    {
+        "mine_name": "Beldongri",
+        "latitude": 21.3251,
+        "longitude": 79.2841,
+        "expected_production": 39000,
+        "predicted_production": 24526,
+        "adjusted_production": 22564,
+        "shortfall": 16436,
+        "risk": "LOW",
+        "weather": "Rain",
+        "temperature": 33.0,
+        "humidity": 61.6,
+        "rainfall_mm": 64.2,
+        "soil_moisture": 65.1,
+        "weather_impact": 8,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "Elevated soil moisture may affect equipment movement and excavation speed.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 70.8,
+        "downtime_hours": 24.8,
+        "blast_delay_days": 3,
+        "issues": [
+            "Low Equipment Availability",
+            "Moderate Rainfall Impacting Efficiency"
+        ],
+        "recommendations": [
+            "Improve equipment utilization",
+            "Adjust shift schedules and monitor haul roads"
+        ]
+    },
+    {
+        "mine_name": "Gowari Wadhona",
+        "latitude": 21.4892,
+        "longitude": 78.9612,
+        "expected_production": 27000,
+        "predicted_production": 22973,
+        "adjusted_production": 19527,
+        "shortfall": 7473,
+        "risk": "LOW",
+        "weather": "Heavy Rain",
+        "temperature": 33.9,
+        "humidity": 73.8,
+        "rainfall_mm": 83.9,
+        "soil_moisture": 85.2,
+        "weather_impact": 15,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Heavy rainfall is reducing operational hours, slowing transportation and affecting haul-road efficiency.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 15% due to current environmental conditions."
+        ],
+        "equipment_availability": 94.3,
+        "downtime_hours": 37.3,
+        "blast_delay_days": 1,
+        "issues": [
+            "Heavy Rainfall Affecting Operations"
+        ],
+        "recommendations": [
+            "Increase drainage and reduce vehicle movement"
+        ]
+    },
+    {
+        "mine_name": "Balaghat",
+        "latitude": 21.8089,
+        "longitude": 80.1834,
+        "expected_production": 263170,
+        "predicted_production": 159748,
+        "adjusted_production": 159748,
+        "shortfall": 103422,
+        "risk": "HIGH",
+        "weather": "Clear",
+        "temperature": 25.6,
+        "humidity": 47.3,
+        "rainfall_mm": 8.7,
+        "soil_moisture": 25.9,
+        "weather_impact": 0,
+        "corrosion_risk": "LOW",
+        "weather_analysis": [
+            "Current weather conditions are not expected to significantly impact production."
+        ],
+        "equipment_availability": 70.4,
+        "downtime_hours": 29.3,
         "blast_delay_days": 4,
         "issues": [
             "Low Equipment Availability"
@@ -74,189 +421,39 @@
         ]
     },
     {
-        "mine_name": "Gumgaon",
-        "latitude": 21.3852,
-        "longitude": 79.0312,
-        "expected_production": 87000,
-        "predicted_production": 58034,
-        "shortfall": 28966,
-        "risk": "MEDIUM",
-        "equipment_availability": 88.2,
-        "downtime_hours": 69.9,
-        "blast_delay_days": 6,
-        "issues": [
-            "Excessive Equipment Downtime",
-            "Moderate Blasting Delays"
-        ],
-        "recommendations": [
-            "Reduce equipment downtime",
-            "Review blasting schedule"
-        ]
-    },
-    {
-        "mine_name": "Ramtek (Parseoni)",
-        "latitude": 21.3961,
-        "longitude": 79.3284,
-        "expected_production": 54000,
-        "predicted_production": 39978,
-        "shortfall": 14022,
-        "risk": "LOW",
-        "equipment_availability": 87.1,
-        "downtime_hours": 44.5,
-        "blast_delay_days": 3,
-        "issues": [
-            "Elevated Equipment Downtime"
-        ],
-        "recommendations": [
-            "Improve maintenance scheduling"
-        ]
-    },
-    {
-        "mine_name": "Sitasaongi",
-        "latitude": 21.5288,
-        "longitude": 79.761,
-        "expected_production": 72000,
-        "predicted_production": 50337,
-        "shortfall": 21663,
-        "risk": "MEDIUM",
-        "equipment_availability": 78.2,
-        "downtime_hours": 32.6,
-        "blast_delay_days": 2,
-        "issues": [
-            "Low Equipment Availability"
-        ],
-        "recommendations": [
-            "Improve equipment utilization"
-        ]
-    },
-    {
-        "mine_name": "Parsoda",
-        "latitude": 21.3125,
-        "longitude": 79.158,
-        "expected_production": 39000,
-        "predicted_production": 22308,
-        "shortfall": 16692,
-        "risk": "LOW",
-        "equipment_availability": 75.1,
-        "downtime_hours": 58.5,
-        "blast_delay_days": 8,
-        "issues": [
-            "Low Equipment Availability",
-            "Elevated Equipment Downtime",
-            "Moderate Blasting Delays"
-        ],
-        "recommendations": [
-            "Improve equipment utilization",
-            "Improve maintenance scheduling",
-            "Review blasting schedule"
-        ]
-    },
-    {
-        "mine_name": "Miragpur",
-        "latitude": 21.6341,
-        "longitude": 79.6124,
-        "expected_production": 27000,
-        "predicted_production": 19506,
-        "shortfall": 7494,
-        "risk": "LOW",
-        "equipment_availability": 81.4,
-        "downtime_hours": 33.9,
-        "blast_delay_days": 3,
-        "issues": [],
-        "recommendations": []
-    },
-    {
-        "mine_name": "Netra",
-        "latitude": 21.8512,
-        "longitude": 80.2415,
-        "expected_production": 48000,
-        "predicted_production": 27828,
-        "shortfall": 20172,
-        "risk": "MEDIUM",
-        "equipment_availability": 73.6,
-        "downtime_hours": 55.2,
-        "blast_delay_days": 6,
-        "issues": [
-            "Low Equipment Availability",
-            "Elevated Equipment Downtime",
-            "Moderate Blasting Delays"
-        ],
-        "recommendations": [
-            "Improve equipment utilization",
-            "Improve maintenance scheduling",
-            "Review blasting schedule"
-        ]
-    },
-    {
-        "mine_name": "Beldongri",
-        "latitude": 21.3251,
-        "longitude": 79.2841,
-        "expected_production": 39000,
-        "predicted_production": 27306,
-        "shortfall": 11694,
-        "risk": "LOW",
-        "equipment_availability": 89.9,
-        "downtime_hours": 19.2,
-        "blast_delay_days": 10,
-        "issues": [
-            "Severe Blasting Delays"
-        ],
-        "recommendations": [
-            "Optimize blasting operations"
-        ]
-    },
-    {
-        "mine_name": "Gowari Wadhona",
-        "latitude": 21.4892,
-        "longitude": 78.9612,
-        "expected_production": 27000,
-        "predicted_production": 18335,
-        "shortfall": 8665,
-        "risk": "LOW",
-        "equipment_availability": 86.6,
-        "downtime_hours": 20.3,
-        "blast_delay_days": 10,
-        "issues": [
-            "Severe Blasting Delays"
-        ],
-        "recommendations": [
-            "Optimize blasting operations"
-        ]
-    },
-    {
-        "mine_name": "Balaghat",
-        "latitude": 21.8089,
-        "longitude": 80.1834,
-        "expected_production": 263170,
-        "predicted_production": 189843,
-        "shortfall": 73327,
-        "risk": "HIGH",
-        "equipment_availability": 85.4,
-        "downtime_hours": 65.8,
-        "blast_delay_days": 2,
-        "issues": [
-            "Excessive Equipment Downtime"
-        ],
-        "recommendations": [
-            "Reduce equipment downtime"
-        ]
-    },
-    {
         "mine_name": "Chikla",
         "latitude": 21.5421,
         "longitude": 79.7482,
         "expected_production": 176786,
-        "predicted_production": 126949,
-        "shortfall": 49837,
-        "risk": "MEDIUM",
-        "equipment_availability": 78.1,
-        "downtime_hours": 28.8,
-        "blast_delay_days": 1,
+        "predicted_production": 102924,
+        "adjusted_production": 87485,
+        "shortfall": 89301,
+        "risk": "HIGH",
+        "weather": "Heavy Rain",
+        "temperature": 35.6,
+        "humidity": 48.7,
+        "rainfall_mm": 118.9,
+        "soil_moisture": 100,
+        "weather_impact": 15,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Heavy rainfall is reducing operational hours, slowing transportation and affecting haul-road efficiency.",
+            "High soil moisture is increasing ground instability and slowing excavation activities.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 15% due to current environmental conditions."
+        ],
+        "equipment_availability": 74.7,
+        "downtime_hours": 26.9,
+        "blast_delay_days": 10,
         "issues": [
-            "Low Equipment Availability"
+            "Low Equipment Availability",
+            "Severe Blasting Delays",
+            "Heavy Rainfall Affecting Operations"
         ],
         "recommendations": [
-            "Improve equipment utilization"
+            "Improve equipment utilization",
+            "Optimize blasting operations",
+            "Increase drainage and reduce vehicle movement"
         ]
     },
     {
@@ -264,19 +461,35 @@
         "latitude": 21.5312,
         "longitude": 79.6825,
         "expected_production": 200000,
-        "predicted_production": 113567,
-        "shortfall": 86433,
+        "predicted_production": 124514,
+        "adjusted_production": 114553,
+        "shortfall": 85447,
         "risk": "HIGH",
-        "equipment_availability": 69.4,
-        "downtime_hours": 65.1,
-        "blast_delay_days": 3,
+        "weather": "Rain",
+        "temperature": 40.2,
+        "humidity": 80.3,
+        "rainfall_mm": 59.8,
+        "soil_moisture": 67.8,
+        "weather_impact": 8,
+        "corrosion_risk": "MEDIUM",
+        "weather_analysis": [
+            "Moderate rainfall is causing operational inefficiencies and reduced workforce productivity.",
+            "Elevated soil moisture may affect equipment movement and excavation speed.",
+            "Environmental conditions indicate moderate corrosion risk for equipment and infrastructure.",
+            "Estimated production reduced by approximately 8% due to current environmental conditions."
+        ],
+        "equipment_availability": 75.3,
+        "downtime_hours": 41.1,
+        "blast_delay_days": 5,
         "issues": [
-            "Critical Equipment Availability",
-            "Excessive Equipment Downtime"
+            "Low Equipment Availability",
+            "Elevated Equipment Downtime",
+            "Moderate Rainfall Impacting Efficiency"
         ],
         "recommendations": [
-            "Increase preventive maintenance",
-            "Reduce equipment downtime"
+            "Improve equipment utilization",
+            "Improve maintenance scheduling",
+            "Adjust shift schedules and monitor haul roads"
         ]
     }
 ]

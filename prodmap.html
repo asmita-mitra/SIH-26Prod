@@ -76,6 +76,8 @@ fetch("mine_data.json")
 .then(response => response.json())
 .then(mines => {
 
+    console.log("Loaded mines:", mines);
+
     mines.forEach(mine => {
 
         let color = "green";
@@ -85,7 +87,6 @@ fetch("mine_data.json")
             color = "red";
             riskClass = "risk-high";
         }
-
         else if (mine.risk === "MEDIUM") {
             color = "orange";
             riskClass = "risk-medium";
@@ -103,6 +104,12 @@ fetch("mine_data.json")
             ? mine.recommendations.join("<br>")
             : "No recommendations required";
 
+        const weatherAnalysis =
+            mine.weather_analysis &&
+            mine.weather_analysis.length > 0
+            ? mine.weather_analysis.join("<br>")
+            : "No significant weather impact detected";
+
         const popup = `
 
         <div class="popup-title">
@@ -117,6 +124,10 @@ fetch("mine_data.json")
         ${mine.predicted_production.toLocaleString()} MT
         <br>
 
+        <b>Adjusted Production:</b>
+        ${mine.adjusted_production.toLocaleString()} MT
+        <br>
+
         <b>Estimated Shortfall:</b>
         ${mine.shortfall.toLocaleString()} MT
         <br><br>
@@ -126,6 +137,34 @@ fetch("mine_data.json")
             ${mine.risk}
         </span>
 
+        <br><br>
+
+        <b>Weather:</b>
+        ${mine.weather}
+        <br>
+
+        <b>Temperature:</b>
+        ${mine.temperature} °C
+        <br>
+
+        <b>Humidity:</b>
+        ${mine.humidity} %
+        <br>
+
+        <b>Rainfall:</b>
+        ${mine.rainfall_mm} mm
+        <br>
+
+        <b>Soil Moisture:</b>
+        ${mine.soil_moisture} %
+        <br>
+
+        <b>Weather Impact:</b>
+        ${mine.weather_impact} %
+        <br>
+
+        <b>Corrosion Risk:</b>
+        ${mine.corrosion_risk}
         <br><br>
 
         <b>Equipment Availability:</b>
@@ -138,13 +177,16 @@ fetch("mine_data.json")
 
         <b>Blast Delay Days:</b>
         ${mine.blast_delay_days}
-
         <br><br>
 
         <b>Major Contributing Factors:</b>
         <br>
         ${issues}
+        <br><br>
 
+        <b>Weather Analysis:</b>
+        <br>
+        ${weatherAnalysis}
         <br><br>
 
         <b>Recommendations:</b>
@@ -170,7 +212,7 @@ fetch("mine_data.json")
         .bindPopup(
             popup,
             {
-                maxWidth: 350
+                maxWidth: 400
             }
         );
 
