@@ -1,0 +1,28 @@
+# SIH MOIL Production Forecast
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+```
+
+## Train Model
+
+```bash
+python machler/train.py
+```
+
+## Generate Mine Data
+
+```bash
+python mapdatagen.py
+```
+
+## Run Dashboard
+
+```bash
+python -m http.server 8000
+```
+
+Open:
+http://localhost:8000/prodmap.html
