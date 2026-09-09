@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>
+        MOIL AI Production Forecast Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .popup-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .risk-high {
+            color: red;
+            font-weight: bold;
+        }
+
+        .risk-medium {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .risk-low {
+            color: green;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+const map = L.map("map").setView(
+    [21.6, 79.8],
+    7
+);
+
+L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+        attribution:
+            "&copy; OpenStreetMap Contributors"
+    }
+).addTo(map);
+
+fetch("mine_data.json")
+.then(response => response.json())
+.then(mines => {
+
+    mines.forEach(mine => {
+
+        let color = "green";
+        let riskClass = "risk-low";
+
+        if (mine.risk === "HIGH") {
+            color = "red";
+            riskClass = "risk-high";
+        }
+
+        else if (mine.risk === "MEDIUM") {
+            color = "orange";
+            riskClass = "risk-medium";
+        }
+
+        const issues =
+            mine.issues &&
+            mine.issues.length > 0
+            ? mine.issues.join("<br>")
+            : "No major operational issues detected";
+
+        const recommendations =
+            mine.recommendations &&
+            mine.recommendations.length > 0
+            ? mine.recommendations.join("<br>")
+            : "No recommendations required";
+
+        const popup = `
+
+        <div class="popup-title">
+            ${mine.mine_name}
+        </div>
+
+        <b>Expected Production:</b>
+        ${mine.expected_production.toLocaleString()} MT
+        <br>
+
+        <b>Predicted Production:</b>
+        ${mine.predicted_production.toLocaleString()} MT
+        <br>
+
+        <b>Estimated Shortfall:</b>
+        ${mine.shortfall.toLocaleString()} MT
+        <br><br>
+
+        <b>Risk Level:</b>
+        <span class="${riskClass}">
+            ${mine.risk}
+        </span>
+
+        <br><br>
+
+        <b>Equipment Availability:</b>
+        ${mine.equipment_availability} %
+        <br>
+
+        <b>Downtime Hours:</b>
+        ${mine.downtime_hours}
+        <br>
+
+        <b>Blast Delay Days:</b>
+        ${mine.blast_delay_days}
+
+        <br><br>
+
+        <b>Major Contributing Factors:</b>
+        <br>
+        ${issues}
+
+        <br><br>
+
+        <b>Recommendations:</b>
+        <br>
+        ${recommendations}
+
+        `;
+
+        L.circleMarker(
+            [
+                mine.latitude,
+                mine.longitude
+            ],
+            {
+                radius: 10,
+                color: color,
+                fillColor: color,
+                fillOpacity: 0.8,
+                weight: 2
+            }
+        )
+        .addTo(map)
+        .bindPopup(
+            popup,
+            {
+                maxWidth: 350
+            }
+        );
+
+    });
+
+})
+.catch(error => {
+
+    console.error(
+        "Failed to load mine_data.json:",
+        error
+    );
+
+});
+
+</script>
+
+</body>
+</html>

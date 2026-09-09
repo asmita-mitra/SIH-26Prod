@@ -1,0 +1,282 @@
+[
+    {
+        "mine_name": "Mansar",
+        "latitude": 21.3985,
+        "longitude": 79.2892,
+        "expected_production": 135000,
+        "predicted_production": 89037,
+        "shortfall": 45963,
+        "risk": "MEDIUM",
+        "equipment_availability": 81.7,
+        "downtime_hours": 37.9,
+        "blast_delay_days": 7,
+        "issues": [
+            "Moderate Blasting Delays"
+        ],
+        "recommendations": [
+            "Review blasting schedule"
+        ]
+    },
+    {
+        "mine_name": "Kandri",
+        "latitude": 21.412,
+        "longitude": 79.2715,
+        "expected_production": 192000,
+        "predicted_production": 112392,
+        "shortfall": 79608,
+        "risk": "HIGH",
+        "equipment_availability": 76.2,
+        "downtime_hours": 69.4,
+        "blast_delay_days": 5,
+        "issues": [
+            "Low Equipment Availability",
+            "Excessive Equipment Downtime"
+        ],
+        "recommendations": [
+            "Improve equipment utilization",
+            "Reduce equipment downtime"
+        ]
+    },
+    {
+        "mine_name": "Ukwa",
+        "latitude": 21.9621,
+        "longitude": 80.4682,
+        "expected_production": 150000,
+        "predicted_production": 90497,
+        "shortfall": 59503,
+        "risk": "HIGH",
+        "equipment_availability": 67.5,
+        "downtime_hours": 32.4,
+        "blast_delay_days": 3,
+        "issues": [
+            "Critical Equipment Availability"
+        ],
+        "recommendations": [
+            "Increase preventive maintenance"
+        ]
+    },
+    {
+        "mine_name": "Tirodi",
+        "latitude": 21.6815,
+        "longitude": 79.7211,
+        "expected_production": 210000,
+        "predicted_production": 140150,
+        "shortfall": 69850,
+        "risk": "HIGH",
+        "equipment_availability": 77.3,
+        "downtime_hours": 33.6,
+        "blast_delay_days": 4,
+        "issues": [
+            "Low Equipment Availability"
+        ],
+        "recommendations": [
+            "Improve equipment utilization"
+        ]
+    },
+    {
+        "mine_name": "Gumgaon",
+        "latitude": 21.3852,
+        "longitude": 79.0312,
+        "expected_production": 87000,
+        "predicted_production": 58034,
+        "shortfall": 28966,
+        "risk": "MEDIUM",
+        "equipment_availability": 88.2,
+        "downtime_hours": 69.9,
+        "blast_delay_days": 6,
+        "issues": [
+            "Excessive Equipment Downtime",
+            "Moderate Blasting Delays"
+        ],
+        "recommendations": [
+            "Reduce equipment downtime",
+            "Review blasting schedule"
+        ]
+    },
+    {
+        "mine_name": "Ramtek (Parseoni)",
+        "latitude": 21.3961,
+        "longitude": 79.3284,
+        "expected_production": 54000,
+        "predicted_production": 39978,
+        "shortfall": 14022,
+        "risk": "LOW",
+        "equipment_availability": 87.1,
+        "downtime_hours": 44.5,
+        "blast_delay_days": 3,
+        "issues": [
+            "Elevated Equipment Downtime"
+        ],
+        "recommendations": [
+            "Improve maintenance scheduling"
+        ]
+    },
+    {
+        "mine_name": "Sitasaongi",
+        "latitude": 21.5288,
+        "longitude": 79.761,
+        "expected_production": 72000,
+        "predicted_production": 50337,
+        "shortfall": 21663,
+        "risk": "MEDIUM",
+        "equipment_availability": 78.2,
+        "downtime_hours": 32.6,
+        "blast_delay_days": 2,
+        "issues": [
+            "Low Equipment Availability"
+        ],
+        "recommendations": [
+            "Improve equipment utilization"
+        ]
+    },
+    {
+        "mine_name": "Parsoda",
+        "latitude": 21.3125,
+        "longitude": 79.158,
+        "expected_production": 39000,
+        "predicted_production": 22308,
+        "shortfall": 16692,
+        "risk": "LOW",
+        "equipment_availability": 75.1,
+        "downtime_hours": 58.5,
+        "blast_delay_days": 8,
+        "issues": [
+            "Low Equipment Availability",
+            "Elevated Equipment Downtime",
+            "Moderate Blasting Delays"
+        ],
+        "recommendations": [
+            "Improve equipment utilization",
+            "Improve maintenance scheduling",
+            "Review blasting schedule"
+        ]
+    },
+    {
+        "mine_name": "Miragpur",
+        "latitude": 21.6341,
+        "longitude": 79.6124,
+        "expected_production": 27000,
+        "predicted_production": 19506,
+        "shortfall": 7494,
+        "risk": "LOW",
+        "equipment_availability": 81.4,
+        "downtime_hours": 33.9,
+        "blast_delay_days": 3,
+        "issues": [],
+        "recommendations": []
+    },
+    {
+        "mine_name": "Netra",
+        "latitude": 21.8512,
+        "longitude": 80.2415,
+        "expected_production": 48000,
+        "predicted_production": 27828,
+        "shortfall": 20172,
+        "risk": "MEDIUM",
+        "equipment_availability": 73.6,
+        "downtime_hours": 55.2,
+        "blast_delay_days": 6,
+        "issues": [
+            "Low Equipment Availability",
+            "Elevated Equipment Downtime",
+            "Moderate Blasting Delays"
+        ],
+        "recommendations": [
+            "Improve equipment utilization",
+            "Improve maintenance scheduling",
+            "Review blasting schedule"
+        ]
+    },
+    {
+        "mine_name": "Beldongri",
+        "latitude": 21.3251,
+        "longitude": 79.2841,
+        "expected_production": 39000,
+        "predicted_production": 27306,
+        "shortfall": 11694,
+        "risk": "LOW",
+        "equipment_availability": 89.9,
+        "downtime_hours": 19.2,
+        "blast_delay_days": 10,
+        "issues": [
+            "Severe Blasting Delays"
+        ],
+        "recommendations": [
+            "Optimize blasting operations"
+        ]
+    },
+    {
+        "mine_name": "Gowari Wadhona",
+        "latitude": 21.4892,
+        "longitude": 78.9612,
+        "expected_production": 27000,
+        "predicted_production": 18335,
+        "shortfall": 8665,
+        "risk": "LOW",
+        "equipment_availability": 86.6,
+        "downtime_hours": 20.3,
+        "blast_delay_days": 10,
+        "issues": [
+            "Severe Blasting Delays"
+        ],
+        "recommendations": [
+            "Optimize blasting operations"
+        ]
+    },
+    {
+        "mine_name": "Balaghat",
+        "latitude": 21.8089,
+        "longitude": 80.1834,
+        "expected_production": 263170,
+        "predicted_production": 189843,
+        "shortfall": 73327,
+        "risk": "HIGH",
+        "equipment_availability": 85.4,
+        "downtime_hours": 65.8,
+        "blast_delay_days": 2,
+        "issues": [
+            "Excessive Equipment Downtime"
+        ],
+        "recommendations": [
+            "Reduce equipment downtime"
+        ]
+    },
+    {
+        "mine_name": "Chikla",
+        "latitude": 21.5421,
+        "longitude": 79.7482,
+        "expected_production": 176786,
+        "predicted_production": 126949,
+        "shortfall": 49837,
+        "risk": "MEDIUM",
+        "equipment_availability": 78.1,
+        "downtime_hours": 28.8,
+        "blast_delay_days": 1,
+        "issues": [
+            "Low Equipment Availability"
+        ],
+        "recommendations": [
+            "Improve equipment utilization"
+        ]
+    },
+    {
+        "mine_name": "Dongri Buzurg",
+        "latitude": 21.5312,
+        "longitude": 79.6825,
+        "expected_production": 200000,
+        "predicted_production": 113567,
+        "shortfall": 86433,
+        "risk": "HIGH",
+        "equipment_availability": 69.4,
+        "downtime_hours": 65.1,
+        "blast_delay_days": 3,
+        "issues": [
+            "Critical Equipment Availability",
+            "Excessive Equipment Downtime"
+        ],
+        "recommendations": [
+            "Increase preventive maintenance",
+            "Reduce equipment downtime"
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+{
+  "M009": {
+    "name": "Chikla",
+    "oms": 0.838,
+    "development_m": 1386.9,
+    "workforce": 1420,
+    "lat": 21.54333,
+    "lon": 79.75389
+  },
+  "M002": {
+    "name": "Balaghat",
+    "oms": 0.89,
+    "development_m": 1800,
+    "workforce": 1900,
+    "lat": 21.8161,
+    "lon": 80.1837
+  }
+}
